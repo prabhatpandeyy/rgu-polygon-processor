@@ -1,0 +1,2 @@
+This file triggers the GitHub Actions build for Windows executable.
+Build timestamp: 2025-01-08
