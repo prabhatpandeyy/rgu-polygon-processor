@@ -4,3 +4,5 @@ shapely>=2.0.0
 openpyxl>=3.0.0
 xlrd>=2.0.0
 pyinstaller>=5.0.0
+pyogrio>=0.7.0
+fiona>=1.8.0

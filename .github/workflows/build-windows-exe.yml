@@ -23,10 +23,12 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        pip install pyogrio fiona
     
     - name: Build Windows executable
       run: |
-        pyinstaller --onefile --windowed --name RGU_Polygon_Processor rgu_polygon_processor.py
+        python build_spec.py
+        pyinstaller RGU_Polygon_Processor.spec
     
     - name: Upload Windows executable
       uses: actions/upload-artifact@v4
